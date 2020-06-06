@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+.contents ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    padding-right: 40px;
+}
+
+.contents ul li {
+    font-family: 'Spartan', sans-serif;
+    background-color: rgb(102, 131, 156);
+    list-style: none;
+    border: 2px solid rgb(200, 226, 248);
+    border-radius: 8px;
+    height: 180px;
+    padding: 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: large;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.contents ul li span {
+    font-weight: lighter;
+}
+
+h1 {
+    font-family: 'Sarabun', sans-serif;
+    text-align: center;
+}
+
+html {
+    background-color: rgb(204, 221, 236);
+}
+
+.rede {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    color: aliceblue;
+}
+
+.rede .rede-text {
+    font-family: 'Spartan', sans-serif;
+    background-color: black;
+    padding-left: 45%;
+    display: flex;
+    flex: auto;
+}
+
+.rede .rede-text .rede-links {
+    margin-left: 10px;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.rede .rede-text .rede-links a {
+    background-color: azure;
+    border-radius: 8px;
+}
+
+@media (max-height: 900px) {
+    .contents ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 16px;
+        padding-right: 40px;
+    }
+}
+
+@media (min-width: 900px) {
+    .contents ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 16px;
+        padding-right: 40px;
+    }
+}
